@@ -7,16 +7,16 @@
     </thead>
         <tbody>
         <?php
-            $stmt = $student_obj->viewCategory();
+            $stmt = $category_object->viewAllCategory();
 
 while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
     extract($row);
     
         echo "<tr>
                 <td> {$CategoryName_fld} </td>
-                <td> {$Quantity_fld} </td>
-                <td> {$CourseCode_fld} </td>
-                <td> <input type = 'button' class = 'btn btn-outline-success update_btn' updateId='{$CourseId_fld}' value='Update'>
+                <td> {$CategoryId_fld} </td>
+                <td> {$CategoryQuantity_fld} </td>
+                <td> <input type = 'button' class = 'btn btn-outline-success update_btn' updateId='{$CategoryId_fld}' value='Update'>
                      <input type = 'button' class = 'btn btn-outline-danger' value='Delete'>
                 </td>
               </tr>";

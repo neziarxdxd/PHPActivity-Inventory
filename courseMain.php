@@ -3,47 +3,47 @@
     include "config/database.php";
     include "classes/student.php";
     include "classes/course.php";
-    include "classes/category.php";
+   
 
     $database_obj = new Database(); 
     $db_lv = $database_obj->getConnection(); 
     
-    $category_object = new Category($db_lv);
+    $course_object = new Course($db_lv);
 
-    $stmt = $category_object->viewAllCategory();
+    $stmt = $course_object->viewAllCourse();
 
   
 ?>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCategory">
-  Add Category 
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCourse">
+  Add Course 
 </button>
 
-<div id="categoryData_div">
-    <?php include "categoryData.php"; ?>
+<div id="courseData_div">
+    <?php include "courseData.php"; ?>
 </div>
 
 
 
 <!--Add Modal -->
-<div class="modal fade" id="addCategory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="addCourse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Course</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
-      <form method="POST" id="addCategoryForm">
+      <form method="POST" id="addCourseForm">
       <div class="modal-body">
-      <label class="form-label">Category ID</label>
-      <input type="text" class="form-control" name="CategoryId_fld">
+      <label class="form-label">Course ID</label>
+      <input type="text" class="form-control" name="CourseId_fld">
 
-      <label class="form-label">Category Name</label>
-      <input type="text" class="form-control" name="CategoryName_fld">
+      <label class="form-label">Course Name</label>
+      <input type="text" class="form-control" name="CourseCode_fld">
 
-      <label class="form-label">Category Quantity</label>
-      <input type="text" class="form-control" name="CategoryQuantity_fld">
+      <label class="form-label">Course Description</label>
+      <input type="text" class="form-control" name="CourseDescription_fld">
          
       </div>
       <div class="modal-footer">
@@ -90,7 +90,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
     </div>
 </div> -->
 
-<script src="scripts/category_script.js"></script>
+<script src="scripts/course_script.js"></script>
 
 <?php
     include "footer.php";

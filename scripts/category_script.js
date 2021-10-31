@@ -1,11 +1,11 @@
 $(document).on('click', '.update_btn', function(){
-    var StudentId_js = $(this).attr('updateId');
-    console.log(StudentId_js);
+    var CategoryId_js = $(this).attr('updateId');
+    console.log(CategoryId_js);
 
     $.ajax({
-        url:'studentViewUpdate.php',
+        url:'categoryViewUpdate.php',
         method: "POST",
-        data:{StudentId_ajax:StudentId_js},
+        data:{CategoryId_ajax:CategoryId_js},
 
         success:function(data){
             $('#viewUpdateModal_div').html(data);
@@ -16,48 +16,48 @@ $(document).on('click', '.update_btn', function(){
 });
 
 
+// FOR CATEGORY
 
-
-$('#updateStudent_form').on('submit',function(event){
+$('#updateCategory_form').on('submit',function(event){
     event.preventDefault(); 
     $.ajax({
-        url: 'studentUpdate.php',
+        url: 'categoryUpdate.php',
         method: "POST",
-        data: $('#updateStudent_form').serialize(), 
+        data: $('#updateCategory_form').serialize(), 
 
         success:function(data){
-            $('#updateStudentModal').modal('hide');
-            $('#studentData_div').html(data);     
+            $('#updateCategoryModal').modal('hide');
+            $('#CategoryData_div').html(data);     
         }
     })
 });
 
-$('#updateStudent_form').on('submit',function(event){
+$('#updateCategory_form').on('submit',function(event){
     event.preventDefault(); 
     $.ajax({
-        url: 'studentUpdate.php',
+        url: 'categoryUpdate.php',
         method: "POST",
-        data: $('#updateStudent_form').serialize(), 
+        data: $('#updateCategory_form').serialize(), 
 
         success:function(data){
             $('#update_modal').modal('hide');
-            $('#studentData_div').html(data);     
+            $('#categoryData_div').html(data);     
         }
     })
 });
 
-$('#addStudentForm').on('submit',function(event){
+$('#addCategoryForm').on('submit',function(event){
     event.preventDefault();
 
     $.ajax({
-        url:'studentAdd.php',
+        url:'categoryAdd.php',
         method:'POST',
-        data:$('#addStudentForm').serialize(),
+        data:$('#addCategoryForm').serialize(),
 
         success:function(data){
             $('#addModal').modal('hide');
-            $('#addStudentForm')[0].reset();
-            $('#studentData_div').html(data);
+            $('#addCategoryForm')[0].reset();
+            $('#categoryData_div').html(data);
         }
     })
 });

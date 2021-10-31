@@ -1,19 +1,19 @@
 <?php
     include "config/database.php";
     include "classes/student.php";
-    include "classes/category.php";
+    include "classes/course.php";
     $database_obj = new Database();
     $db_lv = $database_obj->getConnection();
 
-    $category_object = new Category($db_lv);
+    $course_object = new Course($db_lv);
 
 
     if($_POST){
-        $category_object->CategoryId_fld = $_POST['CategoryId_fld'];
-        $category_object->CategoryName_fld = $_POST['CategoryName_fld'];
-        $category_object->CategoryQuantity_fld= $_POST['CategoryQuantity_fld'];
+        $course_object->CourseId_fld = $_POST['CourseId_fld'];
+        $course_object->CourseCode_fld = $_POST['CourseCode_fld'];
+        $course_object->CourseDescription_fld= $_POST['CourseDescription_fld'];
 
-        $stmt = $category_object->updateCategory();
+        $stmt = $course_object->updateCourse();
         
 
         $rowsAffected = $stmt->rowCount();
@@ -34,6 +34,6 @@
         
         }
 
-        include "categoryData.php";
+        include "courseData.php";
     }
 ?>

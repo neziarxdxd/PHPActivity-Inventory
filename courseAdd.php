@@ -8,7 +8,7 @@
     if($_POST){
         $course_object = new Course($db);
 
-        $course_object->CourseId_fld = $_POST['CourseId_fld'];
+      
         $course_object->CourseCode_fld = $_POST['CourseCode_fld'];
         $course_object->CourseDescription_fld = $_POST['CourseDescription_fld'];
      

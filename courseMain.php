@@ -36,8 +36,7 @@
 
       <form method="POST" id="addCourseForm">
       <div class="modal-body">
-      <label class="form-label">Course ID</label>
-      <input type="text" class="form-control" name="CourseId_fld">
+     
 
       <label class="form-label">Course Name</label>
       <input type="text" class="form-control" name="CourseCode_fld">

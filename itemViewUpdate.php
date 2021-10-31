@@ -17,9 +17,7 @@ echo '
     <form method="POST" id="updateItem_form">
     <div class= "modal-body">
         <input type="hidden" class="form-control" name="itemId_fld" value="' . $item_obj->itemId_fld . '">' . '
-        <label>ID Number</label>
-        <input type="text" class="form-control" name="itemId_fld" value="'. $item_obj->itemId_fld . '">' . '
-        <label>Last Name</label>
+        <label>Item Name</label>
         <input type="text" class="form-control" name="ItemName_fld" value="'. $item_obj->ItemName_fld . '">' . '
         <label>Quantity</label>
         <input type="text" class="form-control" name="ItemQuantity_fld" value="'. $item_obj->ItemQuantity_fld . '">' . '

@@ -35,8 +35,7 @@
 
       <form method="POST" id="addItemForm">
       <div class="modal-body">
-      <label class="form-label">Item ID Number</label>
-      <input type="text" class="form-control" name="itemId_fld">
+    
 
       <label class="form-label">Item Name</label>
       <input type="text" class="form-control" name="ItemName_fld">

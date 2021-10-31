@@ -1,7 +1,7 @@
 <table class="table">
     <thead>
             <th scope="col">Item Name</th>
-            <th scope="col">Category</th>
+            <th scope="col">Item Category</th>
             <th scope="col">Quantity</th>
             <th scope="col">Actions</th>
     </thead>

@@ -36,8 +36,7 @@
 
       <form method="POST" id="addCategoryForm">
       <div class="modal-body">
-      <label class="form-label">Category ID</label>
-      <input type="text" class="form-control" name="CategoryId_fld">
+     
 
       <label class="form-label">Category Name</label>
       <input type="text" class="form-control" name="CategoryName_fld">

@@ -42,8 +42,7 @@
       <label class="form-label">Category Name</label>
       <input type="text" class="form-control" name="CategoryName_fld">
 
-      <label class="form-label">Category Quantity</label>
-      <input type="text" class="form-control" name="CategoryQuantity_fld">
+
          
       </div>
       <div class="modal-footer">

@@ -20,9 +20,7 @@ echo '
         <input type="hidden" class="form-control" name="CategoryId_fld" value="' . $category_obj->CategoryId_fld. '">' . '
         <label>Name</label>
         <input type="text" class="form-control" name="CategoryName_fld" value="'. $category_obj->CategoryName_fld . '">' . '
-        <label>Quantity</label>
-        <input type="text" class="form-control" name="CategoryQuantity_fld" value="'. $category_obj->CategoryQuantity_fld . '">' . '
-        
+      
     </div>
     <div class="modal-footer">
         <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Close">

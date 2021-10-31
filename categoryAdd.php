@@ -10,7 +10,7 @@
 
         $category_object->CategoryId_fld = $_POST['CategoryId_fld'];
         $category_object->CategoryName_fld = $_POST['CategoryName_fld'];
-        $category_object->CategoryQuantity_fld = $_POST['CategoryQuantity_fld'];
+
      
 
         $category_object->addCategory();

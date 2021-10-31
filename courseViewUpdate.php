@@ -17,7 +17,7 @@ echo '
     <form method="POST" id="updateCourse_form">
     <div class= "modal-body">
         <input type="hidden" class="form-control" name="CourseId_fld" value="' . $course_obj->CourseId_fld. '">' . '
-        <label>Name</label>
+        <label>Course Code</label>
         <input type="text" class="form-control" name="CourseCode_fld" value="'. $course_obj->CourseCode_fld . '">' . '
         <label>Description</label>
         <input type="text" class="form-control" name="CourseDescription_fld" value="'. $course_obj->CourseDescription_fld . '">' . '

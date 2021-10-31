@@ -38,7 +38,7 @@
       <div class="modal-body">
      
 
-      <label class="form-label">Course Name</label>
+      <label class="form-label">Course Code</label>
       <input type="text" class="form-control" name="CourseCode_fld">
 
       <label class="form-label">Course Description</label>
